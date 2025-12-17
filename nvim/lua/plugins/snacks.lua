@@ -1,0 +1,19 @@
+return {
+  "folke/snacks.nvim",
+  opts = {
+    explorer = {
+      enabled = true,
+    },
+    picker = {
+      sources = {
+        explorer = {
+          layout = {
+            layout = {
+              position = "right",
+            },
+          },
+        },
+      },
+    },
+  },
+}

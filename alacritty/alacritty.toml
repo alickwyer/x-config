@@ -1,0 +1,17 @@
+# Alacritty - TOML configuration file format. 
+## https://alacritty.org/config-alacritty.html
+
+[general]
+import = ["catppuccin_latte.toml"]
+working_directory = "X:/Workspace"
+
+[env]
+x_dir_ = "X:"
+
+[font]
+normal = { family = "FantasqueSansM Nerd Font Mono", style = "Regular" }
+
+[terminal]
+[terminal.shell]
+program = "X:/Programs/PowerShell/pwsh.exe"
+args = ["-NoLogo", "-NoExit", "-NoProfile", "-File", "X:/User/config/pwsh/x_boot.ps1"]
