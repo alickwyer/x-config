@@ -50,7 +50,7 @@ if (Test-Path $env:x_dir_) {
 # 快速使用命令，同Alias但是支持参数
 function ls { if ($args.Count -eq 0) { lsd -hFA } else { lsd @args } }
 function ll { if ($args.Count -eq 0) { lsd -lhFA } else { lsd -l @args } }
-function usr { cd $env:USER_DIR_ }
+function ud { cd $env:USER_DIR_ }
 function wd { cd $env:WORK_DIR_ }
 function rf { rm -Recurse -Force @args }
 function gitr { git clone --recursive @args }
