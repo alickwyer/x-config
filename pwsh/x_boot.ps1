@@ -34,6 +34,7 @@ if (Test-Path $env:x_dir_) {
 	$env:UV_PYTHON_BIN_DIR = "$user_dir/uv/python/bin"
 	$env:UV_TOOL_BIN_DIR = "$user_dir/uv/tool/bin"
 	$env:UV_TOOL_DIR = "$user_dir/uv/tool"
+	$env:CARGO_BUILD_JOBS = "10"
 	$env:Path = "$env:windir;$env:windir/System32"
   $env:Path = "$prog_dir/ImageGlass;$env:Path"
 	$env:Path = "$user_dir/pnpm;$env:Path"
